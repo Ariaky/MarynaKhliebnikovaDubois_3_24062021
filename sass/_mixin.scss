@@ -48,6 +48,9 @@
     @include flexColumn;
     margin: 0;
     padding: 20px;
+    &__btn {
+        padding-inline-start: 15px;
+    }
     &__btn li {
         @include tablet {
             width: 30%;

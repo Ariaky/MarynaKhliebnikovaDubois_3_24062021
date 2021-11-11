@@ -197,6 +197,9 @@ footer .fa-utensils {
   margin: 0;
   padding: 20px;
 }
+.function__btn {
+  padding-inline-start: 15px;
+}
 .function__btn li {
   display: flex;
   flex-direction: row;
