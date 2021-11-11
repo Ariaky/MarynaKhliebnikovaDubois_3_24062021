@@ -34,9 +34,10 @@
 
 .intro_content {
 	@include flexSpaceAround;
-  	h1 {
+  	h2 {
 		font-family: 'Shrikhand';
-		font-size: 28px;	
+		font-size: 28px;
+		font-weight: 300;	
 	}
 }
 
@@ -64,6 +65,7 @@
 	border-radius: 20px;
 	box-shadow: $shadow;
 	background-color: white;
+	cursor: pointer;
 	
 	&:nth-child(1){
         animation-delay: .6s;
@@ -103,6 +105,12 @@
 			white-space: nowrap;
 			overflow: hidden;
 			text-overflow: ellipsis;
+		}
+		h3 {
+			font-size: 1.1em;
+		}
+		p {
+			font-size: .9em;
 		}
 	}
 	.price p{

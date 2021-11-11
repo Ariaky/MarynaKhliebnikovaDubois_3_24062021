@@ -9,6 +9,7 @@
   }
   100% {
     opacity: 0;
+    z-index: -1;
   }
 }
 @keyframes pulse {
@@ -49,7 +50,7 @@ body {
   font-family: "Roboto", sans-serif;
   margin: 0;
   max-width: 1500px;
-  min-width: 400px;
+  min-width: 320px;
   width: 100%;
   display: block;
 }
@@ -78,7 +79,7 @@ li {
 }
 .loader h1 {
   font-family: "Shrikhand";
-  font-size: 50px;
+  font-size: 45px;
   color: #9356DC;
   animation: pulse 1.5s linear infinite;
 }
@@ -222,6 +223,9 @@ footer .fa-utensils {
   background-color: #f2eafb;
   cursor: pointer;
 }
+.function__btn li:hover i {
+  color: #9356DC;
+}
 .function__btn--number {
   display: flex;
   align-items: center;
@@ -236,9 +240,6 @@ footer .fa-utensils {
 }
 .function__btn--icon {
   color: #6b6262;
-}
-.function__btn--icon:hover {
-  color: #9356DC;
 }
 .function h2 {
   margin: 45px 0 0 10px;
@@ -332,6 +333,7 @@ footer .fa-utensils {
   align-items: center;
   width: 20px;
   height: 20px;
+  cursor: pointer;
 }
 .heart:hover .heart__empty {
   opacity: 0;
@@ -406,9 +408,10 @@ footer .fa-utensils {
   justify-content: space-around;
   align-items: center;
 }
-.intro_content h1 {
+.intro_content h2 {
   font-family: "Shrikhand";
   font-size: 28px;
+  font-weight: 300;
 }
 
 @media screen and (min-width: 768px) {
@@ -436,6 +439,7 @@ footer .fa-utensils {
   border-radius: 20px;
   box-shadow: 0 5px 10px #9b9999;
   background-color: white;
+  cursor: pointer;
 }
 .menu_card:nth-child(1) {
   animation-delay: 0.6s;
@@ -477,6 +481,12 @@ footer .fa-utensils {
   overflow: hidden;
   text-overflow: ellipsis;
 }
+.menu_card .menu_text h3 {
+  font-size: 1.1em;
+}
+.menu_card .menu_text p {
+  font-size: 0.9em;
+}
 .menu_card .price p {
   margin: 0;
   padding: 32px 10px 0 0;
@@ -493,6 +503,7 @@ footer .fa-utensils {
   font-size: 1.3em;
   transition-duration: 0.5s;
   opacity: 0;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .menu_card {

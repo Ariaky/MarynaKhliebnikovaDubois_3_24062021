@@ -68,6 +68,9 @@
             background-color: #f2eafb;
             cursor: pointer;
         }
+        &:hover i {
+			color: $primary;
+		}
     }
     &__btn--number {
         display: flex;
@@ -82,10 +85,7 @@
         left: -10px;
     }
     &__btn--icon {
-        color: darken($color: $grey_dark, $amount: 50); 
-		&:hover {
-			color: $primary;
-		}
+        color: darken($color: $grey_dark, $amount: 50); 	
     }
 }
 
@@ -145,6 +145,7 @@
 	@include flexCenter;
 	width: 20px;
 	height: 20px;
+    cursor: pointer;
 
         &:hover .heart__empty {
             opacity: 0;
@@ -184,4 +185,5 @@
     font-size: 1.3em;
     transition-duration: 0.5s;
     opacity: 0;
+    cursor: pointer;
 }
