@@ -38,10 +38,9 @@
 
     &:hover{
         cursor: pointer;
-    	transition: 0.1s;
-        -webkit-transform: scale(1.05);
-        -ms-transform: scale(1.05);
-        transform: scale(1.05);
+        opacity: .8;
+        box-shadow: 0 5px 4px #3f3e3e;
+    	
     }
 }
 @mixin function {

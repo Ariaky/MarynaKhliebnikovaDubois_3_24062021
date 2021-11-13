@@ -185,10 +185,8 @@ footer .fa-utensils {
 }
 .introduction .btn:hover {
   cursor: pointer;
-  transition: 0.1s;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 0 5px 4px #3f3e3e;
 }
 
 .function {
@@ -530,10 +528,8 @@ footer .fa-utensils {
 }
 .order .btn_order:hover {
   cursor: pointer;
-  transition: 0.1s;
-  -webkit-transform: scale(1.05);
-  -ms-transform: scale(1.05);
-  transform: scale(1.05);
+  opacity: 0.8;
+  box-shadow: 0 5px 4px #3f3e3e;
 }
 
 /*# sourceMappingURL=main.css.map */
