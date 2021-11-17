@@ -7,6 +7,10 @@
   50% {
     opacity: 1;
   }
+  99% {
+    opacity: 0.9;
+    z-index: 5;
+  }
   100% {
     opacity: 0;
     z-index: -1;
@@ -49,7 +53,6 @@
 body {
   font-family: "Roboto", sans-serif;
   margin: 0;
-  max-width: 1500px;
   min-width: 320px;
   width: 100%;
   display: block;
@@ -97,7 +100,7 @@ footer {
     align-items: center;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   footer {
     display: flex;
     flex-direction: column;
@@ -186,7 +189,7 @@ footer .fa-utensils {
 .introduction .btn:hover {
   cursor: pointer;
   opacity: 0.8;
-  box-shadow: 0 5px 4px #3f3e3e;
+  box-shadow: 0 5px 15px #302f2f;
 }
 
 .function {
@@ -213,6 +216,11 @@ footer .fa-utensils {
   font-weight: 600;
 }
 @media screen and (min-width: 768px) {
+  .function__btn li {
+    width: 45%;
+  }
+}
+@media screen and (min-width: 1400px) {
   .function__btn li {
     width: 30%;
   }
@@ -246,6 +254,14 @@ footer .fa-utensils {
   .function ul {
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .function ul {
+    display: flex;
+    flex-direction: row;
     justify-content: space-around;
   }
 }
@@ -273,7 +289,7 @@ footer .fa-utensils {
     width: 43%;
   }
 }
-@media screen and (min-width: 1500px) {
+@media screen and (min-width: 1400px) {
   .restaurant .card {
     width: 22%;
   }
@@ -329,8 +345,6 @@ footer .fa-utensils {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 20px;
-  height: 20px;
   cursor: pointer;
 }
 .heart:hover .heart__empty {
@@ -365,6 +379,7 @@ footer .fa-utensils {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    justify-content: space-around;
   }
 }
 
@@ -505,7 +520,12 @@ footer .fa-utensils {
 }
 @media screen and (min-width: 768px) {
   .menu_card {
-    width: 23rem;
+    width: 21rem;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .menu_card {
+    width: 25rem;
   }
 }
 
@@ -529,7 +549,7 @@ footer .fa-utensils {
 .order .btn_order:hover {
   cursor: pointer;
   opacity: 0.8;
-  box-shadow: 0 5px 4px #3f3e3e;
+  box-shadow: 0 5px 15px #302f2f;
 }
 
 /*# sourceMappingURL=main.css.map */

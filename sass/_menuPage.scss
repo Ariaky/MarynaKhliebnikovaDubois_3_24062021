@@ -121,7 +121,10 @@
 		@include btn_checked; 
 	}
 	@include tablet {
-		width: 23rem;
+		width: 21rem;
+	}
+	@include desktop{
+		width: 25rem;
 	}
 }
 

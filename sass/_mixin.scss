@@ -39,7 +39,7 @@
     &:hover{
         cursor: pointer;
         opacity: .8;
-        box-shadow: 0 5px 4px #3f3e3e;
+        box-shadow: 0 5px 15px #302f2f;
     	
     }
 }
@@ -52,6 +52,9 @@
     }
     &__btn li {
         @include tablet {
+            width: 45%;
+        }
+        @include desktop {
             width: 30%;
         }
         @include flexRow;
@@ -142,8 +145,6 @@
 @mixin heart {
 	.heart {
 	@include flexCenter;
-	width: 20px;
-	height: 20px;
     cursor: pointer;
 
         &:hover .heart__empty {
