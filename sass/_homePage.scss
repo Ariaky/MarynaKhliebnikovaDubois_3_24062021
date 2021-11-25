@@ -1,113 +1,110 @@
 .headerMain {
-	@include flexCenter;
-	box-shadow: 0 0 20px 0 rgb(155, 153, 153);
-	padding: 20px 0 10px 0;
-	img {
-		height:30px;
-	}
+  @include flexCenter;
+  box-shadow: 0 0 20px 0 rgb(155, 153, 153);
+  padding: 20px 0 10px 0;
+  img {
+     height:30px;
+  }
 }
 
 .search {
-	@include flexCenter;
+  @include flexCenter;
+  background-color: $grey_dark;
+  margin: 5px 0 0 0;
+  padding: 13px 0 13px 0;
+     .search__map input {
+	border: none;
 	background-color: $grey_dark;
-	margin: 5px 0 0 0;
-	padding: 13px 0 13px 0;
-
-	.search__map input{
-		border: none;
-		background-color: $grey_dark;
-		font-size: 17px;
-		text-align: center;
-	}
+	font-size: 17px;
+	text-align: center;
+     }
 }
 
 .introduction {
+  @include flexCenter;
+  background-color: $grey_light;
+  flex-direction: column;	
+     h2 {
+	font-weight: bolder;
+	padding: 20px 60px 0;
+	text-align: center;
+     }
+     p {
+	margin: 0 20px;
+	font-size: 19px;
+	text-align: center;
+	color: gray;
+     }
+     .btn {
 	@include flexCenter;
-	background-color: $grey_light;
-	flex-direction: column;	
-
-	h2 {
-		font-weight: bolder;
-		padding: 20px 60px 0;
-		text-align: center;
-	}
-	p {
-		margin: 0 20px;
-		font-size: 19px;
-		text-align: center;
-		color: gray;
-	}
-	
-	.btn {
-		@include flexCenter;
-		@include btn;
-	}
+	@include btn;
+     }
 }
 
 .function {
-	@include function;
-	h2 {
-	margin: 45px 0 0 10px;
-	}
-	ul {
-        @include tablet {
-        	display: flex; 
-        	flex-direction: row;
-			flex-wrap: wrap;
-        	justify-content: space-around;
-    	}
-		@include desktop {
-			display: flex; 
-        	flex-direction: row;
-    		justify-content: space-around;
-		}	
-	}
-	p 	{
-		margin-left: 20px;
-		margin-right: 20px;
-	}	
+  @include function;
+  h2 {
+     margin: 45px 0 0 10px;
+  }
+  ul {
+     @include tablet {
+        display: flex; 
+        flex-direction: row;
+	flex-wrap: wrap;
+        justify-content: space-around;
+     }
+     @include desktop {
+	display: flex; 
+        flex-direction: row;
+    	justify-content: space-around;
+     }	
+  }
+  p {
+     margin-left: 20px;
+     margin-right: 20px;
+  }	
 }
 
 .restaurant {
-	margin-top: 35px;
-	background-color: $grey_light;
-	h2 {
-		padding: 50px 0 0 30px;
+  margin-top: 35px;
+  background-color: $grey_light;
+  h2 {
+     padding: 50px 0 0 30px;
+  }
+  .card {
+     @include card;
+     border-radius: 20px;
+     box-shadow: $shadow;
+     @include tablet{
+     width: 43%;
+  }
+     @include desktop{
+     width: 22%;
+     }
+     &__img img{
+	@include card__img;	
+     }
+     &__content{
+	@include card__content;
+     }
+     .new {
+	@include new;	
+	@include tablet {
+	   position: absolute;
+	   top: 2%;
+	   left: 75%;
 	}
-	.card {
-		@include card;
-		border-radius: 20px;
-		box-shadow: $shadow;
-		@include tablet{
-			width: 43%;
-		}
-		@include desktop{
-			width: 22%;
-		}
-		&__img img{
-			@include card__img;	
-		}
-		&__content{
-			@include card__content;
-		}
-		.new {
-			@include new;	
-			@include tablet {
-				position: absolute;
-				top: 2%;
-				left: 75%;
-			}
-		}		
-	}
+     }		
+  }
 }
 
 @include heart;
 
 .restaurant__cards{
-	@include tablet{
-		display: flex;
-		flex-direction: row;
-		flex-wrap: wrap;
-		justify-content: space-around;
-	}
+  @include tablet{
+     display: flex;
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+  }
 }	
