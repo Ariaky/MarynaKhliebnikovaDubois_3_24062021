@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../../../../HTML CSS/html/Reservia"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Ohmyfood"
+	}
+}

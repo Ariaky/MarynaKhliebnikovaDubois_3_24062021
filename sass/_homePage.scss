@@ -6,6 +6,7 @@
 		height:30px;
 	}
 }
+
 .search {
 	@include flexCenter;
 	background-color: $grey_dark;
@@ -50,18 +51,18 @@
 	}
 	ul {
         @include tablet {
-            display: flex; 
-            flex-direction: row;
+        	display: flex; 
+        	flex-direction: row;
 			flex-wrap: wrap;
-            justify-content: space-around;
-        }
+        	justify-content: space-around;
+    	}
 		@include desktop {
 			display: flex; 
-            flex-direction: row;
-            justify-content: space-around;
-		}
+        	flex-direction: row;
+    		justify-content: space-around;
+		}	
 	}
-	p {
+	p 	{
 		margin-left: 20px;
 		margin-right: 20px;
 	}	
@@ -92,14 +93,14 @@
 		.new {
 			@include new;	
 			@include tablet {
-			position: absolute;
-			top: 2%;
-			left: 75%;
-		}
-		
+				position: absolute;
+				top: 2%;
+				left: 75%;
+			}
 		}		
 	}
 }
+
 @include heart;
 
 .restaurant__cards{

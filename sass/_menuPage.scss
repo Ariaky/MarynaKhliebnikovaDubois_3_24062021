@@ -12,7 +12,6 @@
 	}
 }
 
-
 .main_menu{
 	background-color: $grey_light;
 	img {
@@ -22,7 +21,6 @@
 	}
 }
 
-
 .intro_menu{
 	position: relative;
 	top: -50px;
@@ -30,7 +28,6 @@
 	background-color: $grey_light;
 	border-radius: 25px 25px 0 0;
 }
-
 
 .intro_content {
 	@include flexSpaceAround;
@@ -100,7 +97,7 @@
 		padding: 5px 15px;
 		white-space: nowrap;
 		overflow: hidden;
-		h3, p{
+		h3, p {
 			margin: 5px 5px 5px 0;
 			white-space: nowrap;
 			overflow: hidden;
@@ -113,7 +110,7 @@
 			font-size: .9em;
 		}
 	}
-	.price p{
+	.price p {
 		margin: 0;
 		padding: 32px 10px 0 0;
 	}

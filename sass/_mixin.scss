@@ -4,21 +4,25 @@
 	justify-content: center;
 	align-items: center;
 }
+
 @mixin flexRow {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
-}	
+}
+
 @mixin flexColumn {
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 }
+
 @mixin flexSpaceAround{
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 }
+
 @mixin flexSpaceBet{
 	display: flex;
 	justify-content:  space-between;
@@ -35,14 +39,14 @@
 	margin: 30px 0 60px ;
 	box-shadow: $shadow;
     border: none;
-
+    cursor: pointer;
+    transition: all .7s;
     &:hover{
-        cursor: pointer;
         opacity: .8;
         box-shadow: 0 5px 15px #302f2f;
-    	
     }
 }
+
 @mixin function {
     @include flexColumn;
     margin: 0;
@@ -102,11 +106,13 @@
         @content;
     }
 }
+
 @mixin card {
     position: relative;
     background: white;
     margin: 20px;
 }
+
 @mixin card__img {
     object-fit: cover;
     width: 100%;
@@ -115,6 +121,7 @@
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
 }
+
 @mixin new {
     background-color: $tertiary;
     border-radius: 2px;
@@ -128,6 +135,7 @@
 	top: 2%;
 	left: 70%;
 }
+
 @mixin card__content {
 	@include flexRow;
 	justify-content: space-between;
@@ -142,11 +150,11 @@
 		margin: 15px;
 	}
 }
+
 @mixin heart {
 	.heart {
 	@include flexCenter;
     cursor: pointer;
-
         &:hover .heart__empty {
             opacity: 0;
         }
