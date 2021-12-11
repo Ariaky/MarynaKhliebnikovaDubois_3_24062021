@@ -1,17 +1,16 @@
 .loader{
-	@include flexCenter;
-	position: fixed;
-	height: 100%;
-	width: 100%;
-	z-index: 3;
-	animation: loading 4s;
-    animation-fill-mode: forwards;
-	background-color: white;
-	
-	h1 {
-		font-family: 'Shrikhand';
-		font-size: 45px;
-		color: $primary;
-		animation: pulse 1.5s linear infinite;
-	}	
+  @include flexCenter;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  z-index: 3;
+  animation: loading 4s;
+  animation-fill-mode: forwards;
+  background-color: white;
+     h1 {
+	font-family: 'Shrikhand';
+	font-size: 45px;
+	color: $primary;
+	animation: pulse 1.5s linear infinite;
+     }	
 }

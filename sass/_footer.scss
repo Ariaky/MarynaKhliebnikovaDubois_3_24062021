@@ -1,32 +1,32 @@
 footer {
-    background-color: rgb(65, 64, 64);
-    color: white;
-    padding: 20px;
-    @include tablet {
-        @include flexColumn;
-        align-items: center;
-    }
-    @include desktop {
-        @include flexColumn;
-        align-items: center;
-    }
-    h1 {
-        font-family: 'Shrikhand';
-		font-size: 20px;
-    }
-    ul {
+   background-color: rgb(65, 64, 64);
+   color: white;
+   padding: 20px;
+   @include tablet {
+      @include flexColumn;
+      align-items: center;
+   }
+   @include desktop {
+      @include flexColumn;
+      align-items: center;
+   }
+   h1 {
+      font-family: 'Shrikhand';
+      font-size: 20px;
+   }
+   ul {
+      padding: 5px 0 5px 0;
+      li {
         padding: 5px 0 5px 0;
-        li {
-            padding: 5px 0 5px 0;
-            a {
-                color: white;	
-            }
+      	a { 
+          color: white;	
         }
-    }
-    .fa-hands-helping {
-        margin-right: 10px;
-    }
-    .fa-utensils {
-        margin-right: 15px;
-    }
+      }
+   }
+   .fa-hands-helping {
+      margin-right: 10px;
+   }
+   .fa-utensils {
+      margin-right: 15px;
+   }
 }

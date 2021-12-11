@@ -1,197 +1,196 @@
-
 @mixin flexCenter {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @mixin flexRow {
-	display: flex;
-	flex-direction: row;
-	justify-content: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 @mixin flexColumn {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 @mixin flexSpaceAround{
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @mixin flexSpaceBet{
-	display: flex;
-	justify-content:  space-between;
-	align-items: center;
+  display: flex;
+  justify-content:  space-between;
+  align-items: center;
 }
  
 @mixin btn {
-	border-radius: 2rem;
-	background: $linear-gradient;
-	color: white;
-	font-size: 17px;
-	height: 50px;
-	padding: 2px 30px;
-	margin: 30px 0 60px ;
-	box-shadow: $shadow;
-    border: none;
-    cursor: pointer;
-    transition: all .7s;
-    &:hover{
-        opacity: .8;
-        box-shadow: 0 5px 15px #302f2f;
-    }
+  border-radius: 2rem;
+  background: $linear-gradient;
+  color: white;
+  font-size: 17px;
+  height: 50px;
+  padding: 2px 30px;
+  margin: 30px 0 60px ;
+  box-shadow: $shadow;
+  border: none;
+  cursor: pointer;
+  transition: all .7s;
+  &:hover{
+     opacity: .8;
+     box-shadow: 0 5px 15px #302f2f;
+  }
 }
 
 @mixin function {
-    @include flexColumn;
-    margin: 0;
-    padding: 20px;
-    &__btn {
-        padding-inline-start: 15px;
-    }
-    &__btn li {
-        @include tablet {
-            width: 45%;
-        }
-        @include desktop {
-            width: 30%;
-        }
-        @include flexRow;
-        align-items: center;
-        position: relative;
-        border-radius: 20px;
-        box-shadow: $shadow;
-        background-color: $grey_light;
-        margin: 15px 0px;
-        padding: 10px 0;
-        font-weight: 600;
-        &:hover {
-            background-color: #f2eafb;
-            cursor: pointer;
-        }
-        &:hover i {
-			color: $primary;
-		}
-    }
-    &__btn--number {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background-color: #9356dc;
-        color: white;
-        border-radius: 100%;
-        width: 30px;
-        height: 30px;
-        position: absolute;
-        left: -10px;
-    }
-    &__btn--icon {
-        color: darken($color: $grey_dark, $amount: 50); 	
-    }
+  @include flexColumn;
+  margin: 0;
+  padding: 20px;
+  &__btn {
+     padding-inline-start: 15px;
+  }
+  &__btn li {
+     @include tablet {
+        width: 45%;
+     }
+     @include desktop {
+        width: 30%;
+     }
+     @include flexRow;
+     align-items: center;
+     position: relative;
+     border-radius: 20px;
+     box-shadow: $shadow;
+     background-color: $grey_light;
+     margin: 15px 0px;
+     padding: 10px 0;
+     font-weight: 600;
+     &:hover {
+        background-color: #f2eafb;
+        cursor: pointer;
+     }
+     &:hover i {
+	color: $primary;
+     }
+  }
+  &__btn--number {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     background-color: #9356dc;
+     color: white;
+     border-radius: 100%;
+     width: 30px;
+     height: 30px;
+     position: absolute;
+     left: -10px;
+  }
+  &__btn--icon {
+     color: darken($color: $grey_dark, $amount: 50); 	
+  }
 }
 
 @mixin tablet {
-    @media screen and (min-width: map-get($breakpoints, tablet)) {
-        @content;
-    }
+  @media screen and (min-width: map-get($breakpoints, tablet)) {
+     @content;
+  }
 }
 
 @mixin desktop {
-    @media screen and (min-width: map-get($breakpoints, desktop)) {
-        @content;
-    }
+  @media screen and (min-width: map-get($breakpoints, desktop)) {
+     @content;
+  }
 }
 
 @mixin card {
-    position: relative;
-    background: white;
-    margin: 20px;
+  position: relative;
+  background: white;
+  margin: 20px;
 }
 
 @mixin card__img {
-    object-fit: cover;
-    width: 100%;
-    height: 63%;
-    max-height: 190px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
+  object-fit: cover;
+  width: 100%;
+  height: 63%;
+  max-height: 190px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 @mixin new {
-    background-color: $tertiary;
-    border-radius: 2px;
-    border: 7px solid $tertiary;
-    color:darken($color: $tertiary, $amount: 40);
-    margin-top: 10px;
-	width: 70px;
-	height: 15px;
-	@include flexCenter;
-	position: absolute;
-	top: 2%;
-	left: 70%;
+  background-color: $tertiary;
+  border-radius: 2px;
+  border: 7px solid $tertiary;
+  color:darken($color: $tertiary, $amount: 40);
+  margin-top: 10px;
+  width: 70px;
+  height: 15px;
+  @include flexCenter;
+  position: absolute;
+  top: 2%;
+  left: 70%;
 }
 
 @mixin card__content {
-	@include flexRow;
-	justify-content: space-between;
-	margin: 0 15px;
-	.card_text h3 {
-		margin: 15px 0 0 0;
-	}
-	.card_text p {
-		margin: 5px 0 15px 0;
-	}
-	.icon{
-		margin: 15px;
-	}
+  @include flexRow;
+  justify-content: space-between;
+  margin: 0 15px;
+  .card_text h3 {
+     margin: 15px 0 0 0;
+  }
+  .card_text p {
+     margin: 5px 0 15px 0;
+  }
+  .icon{
+     margin: 15px;
+  }
 }
 
 @mixin heart {
-	.heart {
-	@include flexCenter;
-    cursor: pointer;
-        &:hover .heart__empty {
-            opacity: 0;
-        }
-        &:hover .heart__full {
-            opacity: 1;
-            transform: scale(1);
-        }
-	}
-    .fa-heart {
-		font-size: 24px;
-		position: absolute;
-	}
-	.heart__full {
-        opacity:  0;
-        transform: scale(0);
-        transition: all .3s ease-in-out;
-        background: $linear-gradient;
-        background-clip: border-box;
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-    }  
-    .heart__empty {
-    	transition: all .5s ease-in-out;
-    }
+  .heart {
+     @include flexCenter;
+     cursor: pointer;
+     &:hover .heart__empty {
+        opacity: 0;
+     }
+     &:hover .heart__full {
+        opacity: 1;
+        transform: scale(1);
+     }
+  }
+  .fa-heart {
+     font-size: 24px;
+     position: absolute;
+  }
+  .heart__full {
+     opacity:  0;
+     transform: scale(0);
+     transition: all .3s ease-in-out;
+     background: $linear-gradient;
+     background-clip: border-box;
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent;
+  }  
+  .heart__empty {
+     transition: all .5s ease-in-out;
+  }
 }
 
 @mixin btn_checked {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $tertiary;
-    color: white;
-    height: 66px;
-    width: 0;
-    border-radius: 0 20px 20px 0;
-    font-size: 1.3em;
-    transition-duration: 0.5s;
-    opacity: 0;
-    cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $tertiary;
+  color: white;
+  height: 66px;
+  width: 0;
+  border-radius: 0 20px 20px 0;
+  font-size: 1.3em;
+  transition-duration: 0.5s;
+  opacity: 0;
+  cursor: pointer;
 }
