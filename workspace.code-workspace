@@ -5,6 +5,9 @@
 		},
 		{
 			"path": "."
+		},
+		{
+			"path": "../../P4/Starting website"
 		}
 	],
 	"settings": {
